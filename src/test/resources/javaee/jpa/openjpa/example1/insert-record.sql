@@ -1,0 +1,1 @@
+insert javaee_jpa_openjpa_example1.customer (id, name, age) values (1, 'mary', 30)

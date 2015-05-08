@@ -12,11 +12,11 @@
         <properties>
             <!-- MySQL is using zwamp 1.1.2 -->
             <property name="openjpa.ConnectionDriverName" value="com.mysql.jdbc.Driver" />
-            <property name="openjpa.ConnectionURL" value="jdbc:mysql://localhost/javaee_jpa_openjpa_example1" /> 
+            <property name="openjpa.ConnectionURL" value="jdbc:mysql://localhost/javaee_jpa_openjpa_example1" />
             <property name="openjpa.ConnectionUserName" value="root" />
             <property name="openjpa.ConnectionPassword" value="" />
-            <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.format_sql" value="false"/>
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="false" />
         </properties>
     </persistence-unit>
 </persistence>

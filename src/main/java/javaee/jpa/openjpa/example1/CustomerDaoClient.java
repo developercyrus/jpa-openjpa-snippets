@@ -1,6 +1,6 @@
 package javaee.jpa.openjpa.example1;
 
-public class Client {
+public class CustomerDaoClient {
     public static String getCustomerName() {
         CustomerDao dao = new CustomerDao();
         return dao.findCustomerById(1).getName();

@@ -1,13 +1,14 @@
-package javaee.jpa.openjpa.example1;
+package javaee.jpa.openjpa.example1.client;
 
 import static org.junit.Assert.assertEquals;
+import javaee.jpa.openjpa.example1.service.CustomerServiceImpl;
 
 import org.junit.Test;
 
-public class CustomerDaoClientIT {
+public class ClientIT {
     @Test
     public void test1() {
-    	String actual = CustomerDaoClient.getCustomerName();    	
+    	String actual = Client.getCustomerName();
         System.out.println(actual);
         assertEquals("mary", actual);
     }

@@ -1,4 +1,4 @@
-package javaee.jpa.openjpa.example1;
+package javaee.jpa.openjpa.example1.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GenerationType;

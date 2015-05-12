@@ -1,15 +1,19 @@
-package javaee.jpa.openjpa.example1;
+package javaee.jpa.openjpa.example1.dao;
 
 import java.util.List;
+
+import javaee.jpa.openjpa.example1.entity.Customer;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-public class CustomerDao {
+public class CustomerDaoImpl implements CustomerDao {
+	
+	@Override
     public Customer findCustomerById(int id) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("javaee.jpa.openjpa.example1.Customer");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("javaee.jpa.openjpa.example1.entity.Customer");
         EntityManager em = emf.createEntityManager();
 
         String q = "SELECT c FROM Customer AS c WHERE c.id = ?1";

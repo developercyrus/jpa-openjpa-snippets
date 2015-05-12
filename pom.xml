@@ -1,14 +1,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <!-- Environment: 1. Windows 7 64 bit (assume OS installed in C:\Windows) 
-        2. Eclipse 4.4 3. JDK 8.0 4. zwamp-1.1.2 (mysql) //to do: launch it wih antrun-maven-plugin 
-        Approach1 - all automate 1. "mvn install". This will include a) initialize 
-        mysql database b) compile and enhance jpa classes c) run integration test 
-        2. this project includes integration test 3. with maven-failsafe-plugin, 
-        any java file name with "IT" will be treated as intergration test (by maven, 
-        the phase is integration-test). 4) the integration test report can be found 
-        in \target\failsafe-reports -->
+    <!-- Environment: 
+        1. Windows 7 64 bit (assume OS installed in C:\Windows) 
+        2. Eclipse 4.4 
+        3. JDK 8.0 4. zwamp-1.1.2 (mysql) //to do: launch it wih antrun-maven-plugin 
+        
+        Approach1 - all automate 
+        1. "mvn install". This will include 
+            a) initialize mysql database 
+            b) compile and enhance jpa classes c) run integration test 
+        2.  this project includes integration test 
+        3.  with maven-failsafe-plugin, any java file name with "IT" will be treated 
+            as intergration test (by maven, the phase is integration-test). 
+        4.  the integration test report can be found in \target\failsafe-reports 
+    -->
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

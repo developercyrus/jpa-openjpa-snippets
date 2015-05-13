@@ -15,8 +15,12 @@
             <property name="openjpa.ConnectionURL" value="jdbc:mysql://localhost/javaee_jpa_openjpa_example1" />
             <property name="openjpa.ConnectionUserName" value="root" />
             <property name="openjpa.ConnectionPassword" value="" />
+            <!-- Logging options are provider-specific -->
+            <!-- 
             <property name="hibernate.show_sql" value="true" />
-            <property name="hibernate.format_sql" value="false" />
+            -->
+            <property name="openjpa.Log" value="SQL=Trace" />
+            <property name="openjpa.ConnectionFactoryProperties" value="PrintParameters=true" />
         </properties>
     </persistence-unit>
 </persistence>
